@@ -48,8 +48,20 @@
   }
 }
 
+@media (max-width: 32em) {
+  .expTitle {
+    font-size: 3.6rem;
+  }
+}
+
 @media (max-width: 31em) {
   .expTitle {
     font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 26em) {
+  .expTitle {
+    font-size: 3rem;
   }
 }

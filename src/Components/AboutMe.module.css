@@ -127,3 +127,9 @@
     font-size: 3.5rem;
   }
 }
+
+@media (max-width: 26em) {
+  .aboutmeTitle {
+    font-size: 3rem;
+  }
+}

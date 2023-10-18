@@ -69,6 +69,7 @@
 .copyright {
   display: flex;
   justify-content: center;
+  text-align: center;
   color: rgba(255, 255, 255, 0.519);
 }
 
@@ -102,7 +103,7 @@
 
 @media (max-width: 34em) {
   .contactTitleContainer {
-    padding-bottom: 8rem;
+    padding: 2rem 0 8rem 0;
   }
 
   .contactTitle {
@@ -120,5 +121,28 @@
     display: flex;
     justify-content: center;
     padding-top: 2rem;
+    font-size: 1.7rem;
+  }
+
+  .arrow {
+    top: 2%;
+  }
+}
+
+@media (max-width: 26em) {
+  .contactTitleContainer {
+    padding-top: 2rem;
+  }
+
+  .contactTitle {
+    font-size: 3.5rem;
+  }
+
+  .arrow {
+    right: 3%;
+  }
+
+  .mail {
+    font-size: 1.3rem;
   }
 }

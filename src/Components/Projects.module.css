@@ -1,6 +1,7 @@
 .projectsContainer {
   height: 200vh;
   position: relative;
+  overflow: hidden;
 }
 
 .flex {
