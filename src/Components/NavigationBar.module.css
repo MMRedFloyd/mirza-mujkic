@@ -1,0 +1,102 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+}
+
+.logo {
+  width: 5rem;
+  height: auto;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer;
+  padding-right: 2rem;
+}
+
+.cursor:hover {
+  color: rgb(156, 158, 168);
+}
+
+.ullist {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.mobileNav {
+  display: none;
+  position: relative;
+}
+
+.ullistMobile {
+  list-style: none;
+}
+
+@media (max-width: 59em) {
+  .logo {
+    display: none;
+  }
+
+  .navbar {
+    visibility: hidden;
+  }
+
+  .logoMobile {
+    width: 5rem;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .mobileNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  .ullistMobile {
+    background: linear-gradient(
+      315deg,
+      rgba(4, 46, 82, 0.7) 24%,
+      rgba(32, 67, 205, 1) 36%,
+      rgba(11, 33, 113, 0.3) 47%,
+      rgba(21, 54, 181, 1) 60%,
+      rgba(3, 42, 75, 1) 87%
+    );
+    backdrop-filter: blur(10px);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 8;
+
+    text-align: end;
+    padding: 4rem 4rem 0 2rem;
+    font-size: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin: -2rem 0 0 -2rem;
+
+    visibility: none;
+    pointer-events: none;
+  }
+
+  .active {
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .hamBtn {
+    cursor: pointer;
+    z-index: 9;
+  }
+}

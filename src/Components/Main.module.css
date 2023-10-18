@@ -1,0 +1,149 @@
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22.5rem 0 0 0;
+
+  position: relative;
+  width: 100%;
+}
+
+.firstContainer {
+  display: flex;
+}
+
+.name {
+  font-size: 11rem;
+  line-height: 8.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+}
+
+.mainImg {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  width: 15rem;
+  height: auto;
+}
+
+.secondContainer {
+  width: 25rem;
+}
+
+.topText {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(164, 159, 159, 0.32);
+  margin: 1rem 0;
+}
+
+.moreText {
+  font-weight: 400;
+  line-height: 1.4rem;
+}
+
+.linkScrollDown {
+  padding-top: 1rem;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+@media (min-width: 105em) {
+  .mainContainer {
+    padding-top: 33rem;
+  }
+}
+
+@media (max-width: 84em) {
+  .mainImg {
+    top: 15%;
+    left: 47%;
+  }
+}
+
+@media (max-width: 75em) {
+  .name {
+    font-size: 9rem;
+    line-height: 7rem;
+  }
+
+  .mainImg {
+    top: 13%;
+    left: 43%;
+  }
+}
+
+@media (max-width: 69em) {
+  .mainImg {
+    top: 3%;
+    left: 40%;
+  }
+}
+
+@media (max-width: 65em) {
+  .name {
+    font-size: 7rem;
+    line-height: 5.5rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .secondContainer {
+    width: 70%;
+  }
+
+  .name {
+    padding-right: 12rem;
+  }
+
+  .mainImg {
+    top: 7%;
+    left: 63%;
+  }
+}
+
+@media (max-width: 44em) {
+  .name {
+    padding-right: 0;
+  }
+
+  .mainImg {
+    top: 0;
+    left: 30%;
+  }
+}
+
+@media (max-width: 34em) {
+  .mainContainer {
+    padding-top: 30rem;
+  }
+  .mainImg {
+    top: 7%;
+    left: 25%;
+  }
+
+  .name {
+    font-size: 7rem;
+    line-height: 5.5rem;
+  }
+
+  .secondContainer {
+    width: 100%;
+  }
+}

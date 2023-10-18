@@ -1,0 +1,65 @@
+.projectsContainer {
+  height: 200vh;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  position: sticky;
+  top: 10%;
+  gap: 2rem;
+  height: auto;
+  align-items: center;
+  width: 130rem;
+}
+
+.project {
+  text-decoration: none;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(100px);
+  color: rgb(22, 20, 20);
+  height: auto;
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 2rem 0;
+
+  overflow: hidden;
+}
+
+.imageContainer {
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
+}
+
+.image {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.title {
+  font-size: 3.5rem;
+}
+
+@media (min-width: 105em) {
+  .projectsContainer {
+    height: 250vh;
+  }
+
+  .flex {
+    width: 180rem;
+  }
+
+  .project {
+    height: 37rem;
+    justify-content: space-between;
+  }
+}

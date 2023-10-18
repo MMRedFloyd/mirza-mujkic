@@ -1,0 +1,129 @@
+.aboutmeContainer {
+  height: auto;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 2rem 0;
+  background-color: rgb(255, 255, 255, 0.7);
+  color: rgb(22, 20, 20);
+  width: auto;
+}
+
+.aboutmeTitle {
+  font-size: 7rem;
+  letter-spacing: -3px;
+}
+
+.aboutmeContainerSmall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  flex: 1;
+  padding: 17rem 0 6rem 4rem;
+  display: flex;
+}
+
+.mainImage {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.aboutmeText {
+  flex: 1;
+  text-align: left;
+}
+
+.heading {
+  font-size: 2.5rem;
+  padding: 0 0 10rem 0;
+}
+
+.mainText {
+  color: rgb(35, 33, 33);
+  line-height: 1.7rem;
+}
+
+@media (min-width: 105em) {
+  .mainText {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 84em) {
+  .heading {
+    padding-bottom: 6rem;
+  }
+}
+
+@media (max-width: 75em) {
+  .aboutmeContainerSmall {
+    display: grid;
+    grid-template-columns: 2.5fr 3fr;
+  }
+
+  .mainImage {
+    width: 60%;
+  }
+}
+
+@media (max-width: 59em) {
+  .image {
+    padding-left: 2rem;
+  }
+
+  .mainImage {
+    width: 80%;
+  }
+}
+
+@media (max-width: 51em) {
+  .aboutmeTitle {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 44em) {
+  .aboutmeContainerSmall {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 6rem;
+  }
+
+  .heading {
+    padding-bottom: 4rem;
+  }
+
+  .image {
+    padding: 2rem;
+    width: 50%;
+  }
+
+  .mainImage {
+    width: 100%;
+  }
+}
+
+@media (max-width: 38em) {
+  .aboutmeTitle {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .aboutmeTitle {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 31em) {
+  .aboutmeTitle {
+    font-size: 3.5rem;
+  }
+}

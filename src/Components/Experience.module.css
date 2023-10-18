@@ -1,0 +1,55 @@
+.expContainer {
+  height: auto;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 2rem 0;
+  background-color: rgb(255, 255, 255, 0.7);
+  color: rgb(22, 20, 20);
+}
+
+.expTitle {
+  font-size: 7rem;
+  letter-spacing: -3px;
+  margin-bottom: 5rem;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  border-top: 1px solid rgb(220, 215, 215, 0.67);
+  padding: 3rem 0;
+}
+
+.workDesc {
+  padding-right: 4rem;
+}
+
+@media (max-width: 51em) {
+  .expTitle {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 38em) {
+  .expTitle {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 36em) {
+  .expTitle {
+    font-size: 4rem;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 31em) {
+  .expTitle {
+    font-size: 3.5rem;
+  }
+}
