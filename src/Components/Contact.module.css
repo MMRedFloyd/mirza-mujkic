@@ -136,6 +136,7 @@
 
   .contactTitle {
     font-size: 3rem;
+    line-height: 3.2rem;
   }
 
   .arrow {
@@ -143,6 +144,6 @@
   }
 
   .mail {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }

@@ -151,6 +151,7 @@
 
 @media (max-width: 26em) {
   .name {
-    font-size: 5rem;
+    font-size: 5.3rem;
+    line-height: 5.2rem;
   }
 }
