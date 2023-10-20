@@ -39,6 +39,7 @@ export default function Projects() {
         direction={"horizontal"}
         slidesPerView={1}
         speed={800}
+        spaceBetween={130}
         mousewheel={{
           sensitivity: 4,
           releaseOnEdges: true,
