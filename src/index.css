@@ -8,6 +8,17 @@
 body {
   overflow-x: hidden;
   padding: 0 2rem 2rem 2rem;
+  position: relative;
+}
+
+.swiper {
+  height: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 :root {
@@ -16,15 +27,6 @@ body {
   font-weight: 400;
 
   color: rgba(255, 255, 255, 0.87);
-
-  background-color: hsla(240, 90%, 10%, 1);
-  background-image: radial-gradient(
-      at 76% 7%,
-      hsla(220, 81%, 62%, 1) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 22% 42%, hsla(188, 66%, 40%, 1) 0px, transparent 50%),
-    radial-gradient(at 65% 90%, hsla(190, 76%, 33%, 1) 0px, transparent 50%);
 
   background-color: hsla(240, 90%, 10%, 1);
   background-image: radial-gradient(

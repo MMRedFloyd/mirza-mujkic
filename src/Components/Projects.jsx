@@ -2,8 +2,11 @@ import classes from "./Projects.module.css";
 import omnifoodImg from "../assets/omnifood.png";
 import nasdefektologImg from "../assets/nasdefektolog.png";
 import weatherappImg from "../assets/weatherapp.png";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 export default function Projects() {
   const projects = [
@@ -24,48 +27,44 @@ export default function Projects() {
     {
       title: "Weather App",
       description:
-        "App for weather forecast that fetches data from user current location. User can search for desired city, too.",
+        "App for weather forecast that fetches data from current location. User can search for desired city.",
       image: weatherappImg,
       link: "https://weatherappmirza.netlify.app/",
     },
   ];
 
-  const targetRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-  });
-
-  const smallerScreen = window.innerWidth <= 1680;
-
-  const x = useTransform(
-    scrollYProgress,
-    [0, 1],
-    smallerScreen ? ["5%", "-70%"] : ["20%", "-50%"]
-  );
-
   return (
-    <section
-      id="projects"
-      ref={targetRef}
-      className={classes.projectsContainer}
-    >
-      <motion.div className={classes.flex} style={{ x }}>
-        {projects.map((project, index) => (
-          <a className={classes.project} key={index} href={project.link}>
-            <div>
-              <h1 className={classes.title}>{project.title}</h1>
-              <h3>{project.description}</h3>
-              <div className={classes.imageContainer}>
-                <img
-                  className={classes.image}
-                  src={project.image}
-                  alt={project.title}
-                />
-              </div>
-            </div>
-          </a>
-        ))}
-      </motion.div>
+    <section id="projects" className={classes.projectsContainer}>
+      <Swiper
+        direction={"horizontal"}
+        slidesPerView={1}
+        speed={800}
+        mousewheel={{
+          sensitivity: 4,
+          releaseOnEdges: true,
+        }}
+        modules={[Mousewheel, Pagination]}
+      >
+        <div className={classes.flex}>
+          {projects.map((project, index) => (
+            <SwiperSlide>
+              <a className={classes.project} key={index} href={project.link}>
+                <div className={classes.smallCon}>
+                  <h1 className={classes.title}>{project.title}</h1>
+                  <h3 className={classes.desc}>{project.description}</h3>
+                  <div className={classes.imageContainer}>
+                    <img
+                      className={classes.image}
+                      src={project.image}
+                      alt={project.title}
+                    />
+                  </div>
+                </div>
+              </a>
+            </SwiperSlide>
+          ))}
+        </div>
+      </Swiper>
     </section>
   );
 }
