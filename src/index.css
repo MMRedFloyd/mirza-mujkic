@@ -12,10 +12,11 @@ body {
 }
 
 .swiper {
-  height: auto;
+  height: 100%;
 }
 
 .swiper-slide {
+  height: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
