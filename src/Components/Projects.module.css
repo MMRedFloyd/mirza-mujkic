@@ -1,5 +1,5 @@
 .projectsContainer {
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,11 +26,13 @@
   margin: 2rem 0;
 }
 
-.smallCon {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.title {
+  font-size: 3.5rem;
+}
+
+.descDiv {
+  height: 3rem;
+  padding: 1rem 0;
 }
 
 .imageContainer {
@@ -44,30 +46,13 @@
   border-radius: 2rem;
 }
 
-.title {
-  font-size: 3.5rem;
-}
-
 @media (min-width: 105em) {
-  .projectsContainer {
-    height: 80vh;
-  }
-
   .flex {
     width: 180rem;
-  }
-
-  .project {
-    height: 37rem;
-    justify-content: space-evenly;
   }
 }
 
 @media (max-width: 58em) {
-  .projectsContainer {
-    height: auto;
-  }
-
   .title {
     font-size: 3rem;
   }
@@ -78,17 +63,12 @@
 }
 
 @media (max-width: 56em) {
-  .project {
-    height: 35vh;
-  }
-
   .title {
     font-size: 2rem;
   }
 
   .desc {
     font-size: 1rem;
-    font-weight: 300;
   }
 
   .image {
@@ -103,6 +83,10 @@
 
   .title {
     font-size: 1.5rem;
+  }
+
+  .desc {
+    font-size: 0.8rem;
   }
 
   .image {

@@ -50,16 +50,17 @@ export default function Projects() {
           {projects.map((project, index) => (
             <SwiperSlide>
               <a className={classes.project} key={index} href={project.link}>
-                <div className={classes.smallCon}>
-                  <h1 className={classes.title}>{project.title}</h1>
+                <h1 className={classes.title}>{project.title}</h1>
+
+                <div className={classes.descDiv}>
                   <h3 className={classes.desc}>{project.description}</h3>
-                  <div className={classes.imageContainer}>
-                    <img
-                      className={classes.image}
-                      src={project.image}
-                      alt={project.title}
-                    />
-                  </div>
+                </div>
+                <div className={classes.imageContainer}>
+                  <img
+                    className={classes.image}
+                    src={project.image}
+                    alt={project.title}
+                  />
                 </div>
               </a>
             </SwiperSlide>
