@@ -1,49 +1,13 @@
 .projectsContainer {
-  height: auto;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.flex {
-  display: flex;
-  height: auto;
-  width: 100vw;
-}
-
-.project {
+.link {
   text-decoration: none;
-  border-radius: 2rem;
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(100px);
-  color: rgb(22, 20, 20);
-  height: auto;
-  width: 80%;
-  text-align: center;
-
-  border-radius: 2rem;
-  padding: 2rem;
-  margin: 2rem 0;
-}
-
-.title {
-  font-size: 3.5rem;
-}
-
-.descDiv {
-  height: 3rem;
-  padding: 1rem 0;
-}
-
-.imageContainer {
-  width: 100%;
-  height: auto;
-  padding-top: 2rem;
-}
-
-.image {
-  width: 70%;
-  border-radius: 2rem;
+  color: inherit;
 }
 
 @media (min-width: 105em) {
@@ -77,6 +41,14 @@
 }
 
 @media (max-width: 26em) {
+  .projectsContainer {
+    height: auto;
+  }
+
+  .link {
+    font-size: 0.8rem;
+  }
+
   .flex {
     width: 75rem;
   }
