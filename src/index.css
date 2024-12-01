@@ -9,6 +9,35 @@ body {
   overflow-x: hidden;
   padding: 0 2rem 2rem 2rem;
   position: relative;
+
+  background: linear-gradient(
+    135deg,
+    #0f4881 0%,
+    #0f4881 40%,
+    #50aca6 45%,
+    #50aca6 46%,
+    #068995 50%,
+    #50aca6 55%,
+    #50aca6 56%,
+    #068995 60%,
+    #0f4881 75%
+  );
+
+  /* background: linear-gradient(135deg, #264a7cc7, #098490, #034643, #10655a); */
+  background-size: 400% 400%; /* For smooth animation */
+  animation: gradientAnimation 50s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .swiper-slide {
@@ -25,14 +54,14 @@ body {
 
   color: rgba(255, 255, 255, 0.87);
 
-  background-color: hsla(240, 90%, 10%, 1);
+  /* background-color: hsla(240, 90%, 10%, 1);
   background-image: radial-gradient(
       at 97% 4%,
       hsla(220, 81%, 62%, 1) 0px,
       transparent 50%
     ),
     radial-gradient(at 22% 42%, hsla(188, 66%, 40%, 1) 0px, transparent 50%),
-    radial-gradient(at 65% 90%, hsla(190, 76%, 33%, 1) 0px, transparent 50%);
+    radial-gradient(at 65% 90%, hsla(190, 76%, 33%, 1) 0px, transparent 50%); */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -61,28 +90,32 @@ body {
 
 @media (max-width: 58em) {
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 100px;
+    bottom: 83px;
   }
 
   .swiper-cube .swiper-cube-shadow {
-    bottom: 115px;
+    bottom: 24px;
   }
 }
 
 @media (max-width: 56em) {
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 100px;
+    bottom: 85px;
   }
 
   .swiper-cube .swiper-cube-shadow {
-    bottom: 115px;
+    bottom: 35px;
   }
 }
 
 @media (max-width: 26em) {
+  body {
+    animation: gradientAnimation 20s ease infinite;
+  }
+
   .swiper {
     height: 15rem;
-    margin-bottom: 2rem;
+    width: 15rem;
   }
 
   .swiper-slide {
@@ -90,10 +123,20 @@ body {
   }
 
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 79px;
+    bottom: 64px;
   }
 
   .swiper-cube .swiper-cube-shadow {
-    bottom: 107px;
+    bottom: 47px;
+  }
+}
+
+@media (max-width: 23em) {
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 64px;
+  }
+
+  .swiper-cube .swiper-cube-shadow {
+    bottom: 46px;
   }
 }

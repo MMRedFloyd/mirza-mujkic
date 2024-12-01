@@ -59,15 +59,19 @@
   }
 
   .ullistMobile {
-    background: linear-gradient(
+    /* background: linear-gradient(
       315deg,
       rgba(4, 46, 82, 0.7) 24%,
       rgba(32, 67, 205, 1) 36%,
       rgba(11, 33, 113, 0.3) 47%,
       rgba(21, 54, 181, 1) 60%,
       rgba(3, 42, 75, 1) 87%
-    );
-    backdrop-filter: blur(10px);
+    ); */
+
+    background: linear-gradient(135deg, #0f4881, #50aca6, #068995);
+    background-size: 200% 200%;
+
+    animation: gradientAnimation 10s ease infinite;
 
     position: absolute;
     top: 0;
@@ -88,6 +92,18 @@
 
     visibility: none;
     pointer-events: none;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 
   .active {
