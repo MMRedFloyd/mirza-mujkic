@@ -155,3 +155,10 @@
     line-height: 5.2rem;
   }
 }
+
+@media (max-width: 23em) {
+  .mainImg {
+    top: 7%;
+    left: 11%;
+  }
+}
