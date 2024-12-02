@@ -41,7 +41,7 @@ export default function AboutMe() {
             </motion.div>
             <div className={classes.mainText}>
               <motion.p {...commonAnimationSettings}>
-                I'm Mirza Mujkić, a 25-year-old Frontend Developer from Brčko,
+                I'm Mirza Mujkić, a 27-year-old Frontend Developer from Brčko,
                 Bosnia and Herzegovina. My passion lies in web development, with
                 expertise in JavaScript and React. I've completed internships,
                 numerous projects, and three web development courses to sharpen

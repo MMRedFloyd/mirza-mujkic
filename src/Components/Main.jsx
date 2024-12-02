@@ -41,7 +41,7 @@ export default function Main() {
           </motion.p>
           <div className={classes.line}></div>
           <motion.p variants={item} className={classes.moreText}>
-            Mirza Mujkić, a 25-year-old Frontend Developer from Bosnia and
+            Mirza Mujkić, a 27-year-old Frontend Developer from Bosnia and
             Herzegovina, passionate about web development, with expertise in
             JavaScript and React. Committed to continuous growth and skilled in
             creative problem-solving.
