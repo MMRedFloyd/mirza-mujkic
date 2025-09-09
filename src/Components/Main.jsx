@@ -2,6 +2,7 @@ import mainImg from "../assets/Mirza Mujkic.jpg";
 import classes from "./Main.module.css";
 import { motion } from "framer-motion";
 import ScrollTo from "react-scroll-into-view";
+import ShinyText from "./../ShinyText/ShinyText";
 
 export default function Main() {
   const item = {
@@ -22,10 +23,10 @@ export default function Main() {
         <div className={classes.firstContainer}>
           <div>
             <motion.h1 variants={item} className={classes.name}>
-              MIRZA
+              <ShinyText text="MIRZA" speed={5} className="custom-class" />
             </motion.h1>
             <motion.h1 variants={item} className={classes.name}>
-              MUJKIĆ
+              <ShinyText text="MUJKIĆ" speed={5} className="custom-class" />
             </motion.h1>
           </div>
           <motion.img
@@ -37,14 +38,17 @@ export default function Main() {
         </div>
         <div className={classes.secondContainer}>
           <motion.p variants={item} className={classes.topText}>
-            I'm Mirza Mujkić, frontend developer based in Brčko
+            <ShinyText
+              text="I'm Mirza Mujkić, MERN developer based in Brčko"
+              speed={5}
+              className="custom-class"
+            />
           </motion.p>
           <div className={classes.line}></div>
           <motion.p variants={item} className={classes.moreText}>
-            Mirza Mujkić, a 27-year-old Frontend Developer from Bosnia and
-            Herzegovina, passionate about web development, with expertise in
-            JavaScript and React. Committed to continuous growth and skilled in
-            creative problem-solving.
+            27-year-old MERN developer from Bosnia and Herzegovina. Passionate
+            about web development and specializing in the MERN stack. Committed
+            to continuous learning and creative problem-solving.
           </motion.p>
           <div className={classes.linkScrollDown}>
             <ScrollTo selector="#aboutme">

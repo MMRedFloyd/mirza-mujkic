@@ -2,15 +2,8 @@ import classes from "./Projects.module.css";
 import omnifoodImg from "../assets/omnifood.png";
 import nasdefektologImg from "../assets/nasdefektolog.png";
 import weatherappImg from "../assets/weatherapp.png";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCube, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-
-import "swiper/css";
-import "swiper/css/effect-cube";
-import "swiper/css/pagination";
+import ScrollStack, { ScrollStackItem } from "./../ScrollStack/ScrollStack";
+import ShinyText from "../ShinyText/ShinyText";
 
 export default function Projects() {
   const projects = [
@@ -39,29 +32,30 @@ export default function Projects() {
 
   return (
     <section id="projects" className={classes.projectsContainer}>
-      <Swiper
-        effect={"cube"}
-        grabCursor={true}
-        cubeEffect={{
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
-        }}
-        autoplay={true}
-        pagination={true}
-        modules={[EffectCube, Pagination]}
-        className="swiper"
-      >
+      <h1 className={classes.projectsTitle}>
+        <ShinyText text="PROJECTS" speed={5} className="custom-class titles" />
+      </h1>
+      <ScrollStack>
         {projects.map((project, index) => (
-          <SwiperSlide key={index}>
-            <img src={project.image} alt={`Project ${index}`} />
+          <ScrollStackItem key={index}>
             <a href={project.link} className={classes.link}>
-              <h1>{project.title}</h1>
+              <div className={classes.cardContainer}>
+                <div className={classes.description}>
+                  <h1 className={classes.name}>{project.title}</h1>
+                  <h2>{project.description}</h2>
+                </div>
+                <div className={classes.imageContainer}>
+                  <img
+                    src={project.image}
+                    alt={`Project ${index}`}
+                    className={classes.image}
+                  />
+                </div>
+              </div>
             </a>
-          </SwiperSlide>
+          </ScrollStackItem>
         ))}
-      </Swiper>
+      </ScrollStack>
     </section>
   );
 }

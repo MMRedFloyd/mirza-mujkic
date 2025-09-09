@@ -1,5 +1,6 @@
 import classes from "./Experience.module.css";
 import { motion } from "framer-motion";
+import ShinyText from "../ShinyText/ShinyText";
 
 export default function Experience() {
   const works = [
@@ -36,7 +37,11 @@ export default function Experience() {
         className={classes.expContainer}
       >
         <motion.h1 variants={item} className={classes.expTitle}>
-          EXPERIENCE
+          <ShinyText
+            text="EXPERIENCE"
+            speed={5}
+            className="custom-class titles"
+          />
         </motion.h1>
         {works.map((work, index) => (
           <motion.div className={classes.work} key={index}>

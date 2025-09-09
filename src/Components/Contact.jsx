@@ -5,6 +5,7 @@ import ScrollTo from "react-scroll-into-view";
 import arrow from "../assets/arrowup.png";
 import cv from "../assets/Mirza Mujkić CV.pdf";
 import { useEffect, useState } from "react";
+import ShinyText from "../ShinyText/ShinyText";
 
 export default function Contact() {
   const [year, setYear] = useState();
@@ -48,10 +49,14 @@ export default function Contact() {
           className={classes.contactTitleContainer}
         >
           <motion.h1 variants={item} className={classes.contactTitle}>
-            GOT A PROJECT?
+            <ShinyText
+              text="GOT A PROJECT?"
+              speed={5}
+              className="custom-class"
+            />
           </motion.h1>
           <motion.h1 variants={item} className={classes.contactTitle}>
-            LET'S TALK!
+            <ShinyText text="LET'S TALK!" speed={5} className="custom-class" />
           </motion.h1>
         </motion.div>
         <motion.div
