@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,15 +59,6 @@
   }
 
   .ullistMobile {
-    /* background: linear-gradient(
-      315deg,
-      rgba(4, 46, 82, 0.7) 24%,
-      rgba(32, 67, 205, 1) 36%,
-      rgba(11, 33, 113, 0.3) 47%,
-      rgba(21, 54, 181, 1) 60%,
-      rgba(3, 42, 75, 1) 87%
-    ); */
-
     background: linear-gradient(135deg, #0f4881, #50aca6, #068995);
     background-size: 200% 200%;
 
@@ -114,5 +105,91 @@
   .hamBtn {
     cursor: pointer;
     z-index: 9;
+  }
+} */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+  padding: 1rem 0;
+}
+
+.logo {
+  width: 5rem;
+  height: auto;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer;
+  padding-right: 2rem;
+  transition: color 0.3s ease;
+}
+
+.cursor:hover {
+  color: rgb(156, 158, 168);
+}
+
+.ullist {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+/* Mobile Navigation Container */
+.mobileNavContainer {
+  display: none;
+}
+
+.mobileNavHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+
+.logoMobile {
+  width: 5rem;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 59em) {
+  /* Hide desktop navigation */
+  .navbar {
+    display: none;
+  }
+
+  /* Show mobile navigation */
+  .mobileNavContainer {
+    /* display: block;
+    position: relative; */
+    display: flex;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .mobileNavHeader {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Dodatni responsive breakpoints */
+@media (max-width: 48em) {
+  .logoMobile {
+    width: 4rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .logoMobile {
+    width: 3.5rem;
+  }
+
+  .mobileNavHeader {
+    padding: 0.5rem 0;
   }
 }
