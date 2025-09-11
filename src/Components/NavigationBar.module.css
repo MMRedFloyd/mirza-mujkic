@@ -1,4 +1,4 @@
-/* .navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,9 +106,9 @@
     cursor: pointer;
     z-index: 9;
   }
-} */
+}
 
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -136,10 +136,10 @@
   list-style: none;
   display: flex;
   gap: 2rem;
-}
+} */
 
 /* Mobile Navigation Container */
-.mobileNavContainer {
+/* .mobileNavContainer {
   display: none;
 }
 
@@ -154,19 +154,17 @@
   width: 5rem;
   height: auto;
   cursor: pointer;
-}
+} */
 
-/* Media Queries */
-@media (max-width: 59em) {
-  /* Hide desktop navigation */
+/* @media (max-width: 59em) {
+
   .navbar {
     display: none;
   }
 
-  /* Show mobile navigation */
+
   .mobileNavContainer {
-    /* display: block;
-    position: relative; */
+
     display: flex;
     position: relative;
     z-index: 1000;
@@ -175,10 +173,10 @@
   .mobileNavHeader {
     margin-bottom: 1rem;
   }
-}
+} */
 
 /* Dodatni responsive breakpoints */
-@media (max-width: 48em) {
+/* @media (max-width: 48em) {
   .logoMobile {
     width: 4rem;
   }
@@ -192,4 +190,4 @@
   .mobileNavHeader {
     padding: 0.5rem 0;
   }
-}
+} */
