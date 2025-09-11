@@ -311,6 +311,10 @@ body {
 
 /* Mobile - 480px i manje */
 @media (max-width: 30em) {
+  .aurora-container {
+    display: none;
+  }
+
   .aurora-layer {
     width: 180%;
     height: 180%;
