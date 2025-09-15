@@ -1,6 +1,6 @@
 import classes from "./Contact.module.css";
 import { motion } from "framer-motion";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.avif";
 import ScrollTo from "react-scroll-into-view";
 import arrow from "../assets/arrowup.png";
 import cv from "../assets/Mirza Mujkić CV.pdf";

@@ -1,11 +1,10 @@
 import classes from "./NavigationBar.module.css";
 import ScrollTo from "react-scroll-into-view";
 import { motion } from "framer-motion";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.avif";
 import { Turn as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import Modal from "./Modal";
-// import StaggeredMenu from "./../StaggeredMenu/StaggeredMenu";
 
 export default function NavigationBar() {
   const item = {
