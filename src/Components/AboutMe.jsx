@@ -1,5 +1,5 @@
 import classes from "./AboutMe.module.css";
-import mainImage from "../assets/Mirza Mujkic.jpg";
+import mainImage from "../assets/Mirza Mujkic.avif";
 import { motion } from "framer-motion";
 import ShinyText from "../ShinyText/ShinyText";
 

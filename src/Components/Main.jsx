@@ -1,4 +1,4 @@
-import mainImg from "../assets/Mirza Mujkic.jpg";
+import mainImg from "../assets/Mirza Mujkic.avif";
 import classes from "./Main.module.css";
 import { motion } from "framer-motion";
 import ScrollTo from "react-scroll-into-view";

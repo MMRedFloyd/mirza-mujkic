@@ -1,7 +1,6 @@
 import classes from "./Projects.module.css";
-import omnifoodImg from "../assets/omnifood.png";
-import nasdefektologImg from "../assets/nasdefektolog.png";
-import weatherappImg from "../assets/weatherapp.png";
+import omnifoodImg from "../assets/omnifood.avif";
+import nasdefektologImg from "../assets/nasdefektolog.avif";
 import ScrollStack, { ScrollStackItem } from "./../ScrollStack/ScrollStack";
 import ShinyText from "../ShinyText/ShinyText";
 
@@ -21,13 +20,6 @@ export default function Projects() {
       image: omnifoodImg,
       link: "https://omnifood-mirzam.netlify.app/",
     },
-    // {
-    //   title: "Weather App",
-    //   description:
-    //     "App for weather forecast that fetches data from current location. User can search for desired city.",
-    //   image: weatherappImg,
-    //   link: "https://weatherappmirza.netlify.app/",
-    // },
   ];
 
   return (

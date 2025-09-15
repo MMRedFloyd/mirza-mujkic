@@ -142,7 +142,7 @@ export default function NavigationBar() {
                 >
                   <div className={classes.sectionContainer}>
                     <p className={classes.smallNumb}>03</p>
-                    PROJECTS
+                    <p>PROJECTS</p>
                   </div>
                 </motion.li>
               </ScrollTo>
