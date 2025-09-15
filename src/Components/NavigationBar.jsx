@@ -116,7 +116,10 @@ export default function NavigationBar() {
                   variants={mobileNav}
                   onClick={closeModal}
                 >
-                  About me
+                  <div className={classes.sectionContainer}>
+                    <p className={classes.smallNumb}>01</p>
+                    ABOUT ME
+                  </div>
                 </motion.li>
               </ScrollTo>
               <ScrollTo selector="#experience">
@@ -125,7 +128,10 @@ export default function NavigationBar() {
                   variants={mobileNav}
                   onClick={closeModal}
                 >
-                  Experience
+                  <div className={classes.sectionContainer}>
+                    <p className={classes.smallNumb}>02</p>
+                    EXPERIENCE
+                  </div>
                 </motion.li>
               </ScrollTo>
               <ScrollTo selector="#projects">
@@ -134,7 +140,10 @@ export default function NavigationBar() {
                   variants={mobileNav}
                   onClick={closeModal}
                 >
-                  Projects
+                  <div className={classes.sectionContainer}>
+                    <p className={classes.smallNumb}>03</p>
+                    PROJECTS
+                  </div>
                 </motion.li>
               </ScrollTo>
               <ScrollTo selector="#contact">
@@ -143,7 +152,10 @@ export default function NavigationBar() {
                   variants={mobileNav}
                   onClick={closeModal}
                 >
-                  Contact
+                  <div className={classes.sectionContainer}>
+                    <p className={classes.smallNumb}>04</p>
+                    CONTACT
+                  </div>
                 </motion.li>
               </ScrollTo>
             </motion.ul>
@@ -153,136 +165,3 @@ export default function NavigationBar() {
     </>
   );
 }
-
-// import classes from "./NavigationBar.module.css";
-// import ScrollTo from "react-scroll-into-view";
-// import { motion } from "framer-motion";
-// import logo from "../assets/logo.png";
-// import { useState, useEffect } from "react";
-// import StaggeredMenu from "./../StaggeredMenu/StaggeredMenu";
-
-// export default function NavigationBar() {
-//   const [isMobile, setIsMobile] = useState(false);
-
-//   // Provera da li je mobilni ekran
-//   useEffect(() => {
-//     const checkScreenSize = () => {
-//       setIsMobile(window.innerWidth <= 944); // 59em = 944px
-//     };
-
-//     // Proveri odmah
-//     checkScreenSize();
-
-//     // Dodaj event listener za resize
-//     window.addEventListener("resize", checkScreenSize);
-
-//     // Cleanup
-//     return () => window.removeEventListener("resize", checkScreenSize);
-//   }, []);
-
-//   const item = {
-//     hidden: { opacity: 0, y: -50 },
-//     visible: { opacity: 1, y: 0 },
-//     transition: { duration: 0.5 },
-//   };
-
-//   const menuItems = [
-//     { label: "About me", ariaLabel: "Learn about me", link: "#aboutme" },
-//     {
-//       label: "Experience",
-//       ariaLabel: "View my experience",
-//       link: "#experience",
-//     },
-//     { label: "Projects", ariaLabel: "See my projects", link: "#projects" },
-//     { label: "Contact", ariaLabel: "Get in touch", link: "#contact" },
-//   ];
-
-//   const socialItems = [
-//     { label: "GitHub", link: "https://github.com/MMRedFloyd" },
-//     { label: "LinkedIn", link: "https://linkedin.com" },
-//     { label: "Email", link: "mailto:your-email@example.com" },
-//   ];
-
-//   return (
-//     <>
-//       {/* Desktop Navigation */}
-//       <motion.nav
-//         initial={"hidden"}
-//         whileInView={"visible"}
-//         viewport={{ once: true }}
-//         transition={{ staggerChildren: 0.3 }}
-//         className={classes.navbar}
-//         id="home"
-//       >
-//         <ScrollTo selector="#home">
-//           <motion.img
-//             className={classes.logo}
-//             variants={item}
-//             src={logo}
-//             alt="Logo"
-//           />
-//         </ScrollTo>
-
-//         <ul className={classes.ullist}>
-//           <ScrollTo selector="#aboutme">
-//             <motion.li className={classes.cursor} variants={item}>
-//               About me
-//             </motion.li>
-//           </ScrollTo>
-//           <ScrollTo selector="#experience">
-//             <motion.li className={classes.cursor} variants={item}>
-//               Experience
-//             </motion.li>
-//           </ScrollTo>
-//           <ScrollTo selector="#projects">
-//             <motion.li className={classes.cursor} variants={item}>
-//               Projects
-//             </motion.li>
-//           </ScrollTo>
-//           <ScrollTo selector="#contact">
-//             <motion.li className={classes.cursor} variants={item}>
-//               Contact
-//             </motion.li>
-//           </ScrollTo>
-//         </ul>
-//       </motion.nav>
-
-//       {/* Mobile Navigation - samo kada je isMobile true */}
-//       {isMobile && (
-//         <div className={classes.mobileNavContainer}>
-//           {/* <motion.div
-//             initial={"hidden"}
-//             whileInView={"visible"}
-//             viewport={{ once: true }}
-//             className={classes.mobileNavHeader}
-//           > */}
-//           <ScrollTo selector="#home">
-//             <motion.img
-//               className={classes.logoMobile}
-//               variants={item}
-//               src={logo}
-//               alt="Logo"
-//             />
-//           </ScrollTo>
-//           {/* </motion.div> */}
-
-//           {/* <StaggeredMenu
-//             position="right"
-//             items={menuItems}
-//             socialItems={socialItems}
-//             displaySocials={true}
-//             displayItemNumbering={true}
-//             menuButtonColor="#fff"
-//             openMenuButtonColor="#fff"
-//             changeMenuColorOnOpen={true}
-//             colors={["#B19EEF", "#5227FF"]}
-//             logoUrl="./assets/logo.png"
-//             accentColor="#ff6b6b"
-//             onMenuOpen={() => console.log("Menu opened")}
-//             onMenuClose={() => console.log("Menu closed")}
-//           /> */}
-//         </div>
-//       )}
-//     </>
-//   );
-// }
