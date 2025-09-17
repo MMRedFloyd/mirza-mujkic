@@ -40,7 +40,6 @@ body {
   overflow: hidden;
 }
 
-/* Desktop Aurora - Kompleksna */
 .aurora-layer {
   position: absolute;
   width: 250%;
@@ -51,7 +50,7 @@ body {
   filter: blur(8px);
   mix-blend-mode: screen;
   will-change: transform, opacity;
-  transform: translateZ(0); /* GPU acceleration */
+  transform: translateZ(0);
   backface-visibility: hidden;
 }
 
@@ -108,7 +107,6 @@ body {
   transform: rotate(8deg) translateZ(0);
 }
 
-/* Desktop animacije */
 @keyframes aurora-wave1 {
   0%,
   100% {
@@ -151,7 +149,6 @@ body {
   }
 }
 
-/* Tablet - Umereno optimizovano */
 @media (max-width: 64em) {
   .aurora-layer {
     width: 180%;
@@ -175,7 +172,6 @@ body {
   }
 }
 
-/* Mobile - Ultra optimizovano za performance */
 @media (max-width: 48em) {
   .aurora-layer {
     width: 150%;
@@ -184,7 +180,6 @@ body {
     left: -20%;
     filter: blur(2px);
     opacity: 0.25;
-    /* Fokus na GPU optimizaciju */
     transform: translateZ(0) scale3d(1, 1, 1);
     -webkit-transform: translateZ(0) scale3d(1, 1, 1);
     will-change: transform;
@@ -194,7 +189,6 @@ body {
     -webkit-perspective: 1000px;
   }
 
-  /* Jednostavni gradijenti za mobile */
   .aurora-layer:nth-child(1) {
     background: radial-gradient(
         ellipse 1500px 600px at 30% 40%,
@@ -238,7 +232,6 @@ body {
   }
 }
 
-/* Mobile animacije - Meget jednostavne */
 @keyframes mobile-aurora1 {
   0%,
   100% {
@@ -275,7 +268,6 @@ body {
   }
 }
 
-/* Dodatne optimizacije za slabe telefone */
 @media (max-width: 30em) {
   .aurora-layer {
     width: 130%;
@@ -286,7 +278,6 @@ body {
     filter: blur(1px);
   }
 
-  /* Ukloni treći layer na malim ekranima */
   .aurora-layer:nth-child(3) {
     display: none;
   }
@@ -300,10 +291,8 @@ body {
   }
 }
 
-/* Performance boost za touch devices */
 @media (hover: none) and (pointer: coarse) {
   .aurora-layer {
-    /* Optimizacija za touch uređaje */
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     will-change: transform;

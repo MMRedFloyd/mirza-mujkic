@@ -54,7 +54,6 @@
   height: 100%;
 }
 
-/* Tablet landscape - 1200px and down */
 @media (max-width: 75em) {
   .projectsTitle {
     font-size: 6rem;

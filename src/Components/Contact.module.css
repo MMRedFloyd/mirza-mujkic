@@ -28,14 +28,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  list-style: none;
   width: 55%;
   font-size: 1.7rem;
+}
+
+.ul {
+  list-style: none;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .links {
   text-decoration: none;
   color: #fff;
+}
+
+.links:hover {
+  color: rgb(37, 51, 238);
 }
 
 .logo {
@@ -115,6 +125,12 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
   }
 
   .mail {

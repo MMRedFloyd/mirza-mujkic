@@ -16,7 +16,8 @@
 }
 
 .scroll-stack-inner .scroll-stack-card:nth-child(odd) {
-  background-color: rgb(9, 202, 202);
+  /* background-color: rgb(9, 202, 202); */
+  background-color: rgb(88, 4, 190);
 }
 
 .scroll-stack-inner .scroll-stack-card:nth-child(even) {
