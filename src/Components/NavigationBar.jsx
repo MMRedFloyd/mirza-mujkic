@@ -89,7 +89,6 @@ export default function NavigationBar() {
             duration={0.8}
             toggled={isActive}
             toggle={setIsActive}
-            aria-label={isActive ? "Close nav menu" : "Open nav menu"}
             onToggle={(toggled) => {
               if (toggled) {
                 setIsActive(true);
@@ -100,6 +99,9 @@ export default function NavigationBar() {
               }
             }}
           />
+          <span className={classes.visuallyHidden}>
+            {isActive ? "Close nav menu" : "Open nav menu"}
+          </span>
         </motion.div>
         {isActive && (
           <Modal>

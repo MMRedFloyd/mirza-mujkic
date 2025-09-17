@@ -76,21 +76,20 @@ export default function Contact() {
               alt="Logo"
             />
           </ScrollTo>
-          <ul className={classes.ul}>
-            <a
-              className={classes.links}
-              href="https://www.linkedin.com/in/mirza-mujki%C4%87-84b836252/"
-            >
-              <motion.li variants={item}>LinkedIn</motion.li>
-            </a>
-            <a
-              className={classes.links}
-              href="
+          <a
+            className={classes.links}
+            href="https://www.linkedin.com/in/mirza-mujki%C4%87-84b836252/"
+          >
+            <motion.p variants={item}>LinkedIn</motion.p>
+          </a>
+          <a
+            className={classes.links}
+            href="
             https://github.com/MMRedFloyd"
-            >
-              <motion.li variants={item}>GitHub</motion.li>
-            </a>
-          </ul>
+          >
+            <motion.p variants={item}>GitHub</motion.p>
+          </a>
+
           <a href={cv} download="Mirza Mujkić CV">
             <motion.button className={classes.cvbtn} variants={item}>
               Download my CV
