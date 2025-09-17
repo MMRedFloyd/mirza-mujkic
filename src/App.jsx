@@ -1,19 +1,23 @@
-import AboutMe from "./Components/AboutMe";
-import Contact from "./Components/Contact";
-import Experience from "./Components/Experience";
+import { lazy, Suspense } from "react";
 import Main from "./Components/Main";
 import NavigationBar from "./Components/NavigationBar";
-import Projects from "./Components/Projects";
+
+const AboutMe = lazy(() => import("./Components/AboutMe"));
+const Experience = lazy(() => import("./Components/Experience"));
+const Projects = lazy(() => import("./Components/Projects"));
+const Contact = lazy(() => import("./Components/Contact"));
 
 function App() {
   return (
     <>
       <NavigationBar />
       <Main />
-      <AboutMe />
-      <Experience />
-      <Projects />
-      <Contact />
+      <Suspense fallback={<div>Loading...</div>}>
+        <AboutMe />
+        <Experience />
+        <Projects />
+        <Contact />
+      </Suspense>
     </>
   );
 }
