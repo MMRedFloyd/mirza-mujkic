@@ -34,6 +34,8 @@ export default function Main() {
             src={mainImg}
             className={classes.mainImg}
             alt="Mirza Mujkić"
+            fetchpriority="high"
+            loading="eager"
           />
         </div>
         <div className={classes.secondContainer}>

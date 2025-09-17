@@ -35,6 +35,8 @@ export default function AboutMe() {
               className={classes.mainImage}
               src={mainImage}
               alt="Mirza Mujkić"
+              fetchpriority="high"
+              loading="eager"
             />
           </div>
           <div className={classes.aboutmeText}>
