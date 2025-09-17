@@ -99,9 +99,6 @@ export default function NavigationBar() {
               }
             }}
           />
-          <span className={classes.visuallyHidden}>
-            {isActive ? "Close nav menu" : "Open nav menu"}
-          </span>
         </motion.div>
         {isActive && (
           <Modal>

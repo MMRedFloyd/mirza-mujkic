@@ -54,9 +54,9 @@ export default function Main() {
           </motion.p>
           <div className={classes.linkScrollDown}>
             <ScrollTo selector="#aboutme">
-              <motion.a className={classes.cursor} variants={item}>
+              <motion.p className={classes.cursor} variants={item}>
                 Scroll down
-              </motion.a>
+              </motion.p>
             </ScrollTo>
           </div>
         </div>
