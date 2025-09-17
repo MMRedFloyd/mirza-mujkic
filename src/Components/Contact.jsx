@@ -4,19 +4,10 @@ import logo from "../assets/logo.avif";
 import ScrollTo from "react-scroll-into-view";
 import arrow from "../assets/arrowup.png";
 import cv from "../assets/Mirza Mujkić CV.pdf";
-import { useEffect, useState } from "react";
 import ShinyText from "../ShinyText/ShinyText";
 
 export default function Contact() {
-  const [year, setYear] = useState();
-
-  useEffect(() => {
-    function getYear() {
-      const currentYear = new Date().getFullYear();
-      setYear(currentYear);
-    }
-    getYear();
-  }, []);
+  const currentYear = new Date().getFullYear();
 
   const commonAnimationSettings = {
     initial: "hidden",
@@ -111,7 +102,7 @@ export default function Contact() {
         </motion.div>
         <div className={classes.divider}></div>
         <motion.div {...commonAnimationSettings} className={classes.copyright}>
-          <p> Copyright © {year} | All rights reserved. </p>
+          <p> Copyright © {currentYear} | All rights reserved. </p>
         </motion.div>
       </div>
     </>
