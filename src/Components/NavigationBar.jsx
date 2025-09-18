@@ -44,28 +44,28 @@ export default function NavigationBar() {
           />
         </ScrollTo>
 
-        <ul className={classes.ullist}>
+        <div className={classes.ullist}>
           <ScrollTo selector="#aboutme">
-            <motion.li className={classes.cursor} variants={item}>
+            <motion.p className={classes.cursor} variants={item}>
               About me
-            </motion.li>
+            </motion.p>
           </ScrollTo>
           <ScrollTo selector="#experience">
-            <motion.li className={classes.cursor} variants={item}>
+            <motion.p className={classes.cursor} variants={item}>
               Experience
-            </motion.li>
+            </motion.p>
           </ScrollTo>
           <ScrollTo selector="#projects">
-            <motion.li className={classes.cursor} variants={item}>
+            <motion.p className={classes.cursor} variants={item}>
               Projects
-            </motion.li>
+            </motion.p>
           </ScrollTo>
           <ScrollTo selector="#contact">
-            <motion.li className={classes.cursor} variants={item}>
+            <motion.p className={classes.cursor} variants={item}>
               Contact
-            </motion.li>
+            </motion.p>
           </ScrollTo>
-        </ul>
+        </div>
       </motion.nav>
       <motion.nav
         initial={"hidden"}
